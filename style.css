@@ -1,0 +1,197 @@
+:root {
+    --primary-color: #fff;
+    --secondary-color: #292b2f;
+    --dark-blue: #3525af;
+    --dark-pink: #9153c9;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu',sans-serif;
+    list-style: none;
+}
+body {
+    background: linear-gradient(to right,var(--dark-blue),var(--dark-pink));
+}
+.resume {
+    width: 800px;
+    background-color: var(--primary-color);
+    margin: 25px auto;
+    display: flex;
+}
+.left {
+    background-color: var(--secondary-color);
+    width: 250px;
+    padding: 0px 20px;
+}
+.left .image-holder {
+    text-align: center;
+    padding: 20px 0px;
+}
+.left .image-holder img {
+    width: 200px;
+    border-radius: 30px;
+}
+.padding-bottom {
+    padding-bottom: 20px;
+}
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    color: var(--dark-blue);
+    position: relative;
+    text-align: right;
+    margin-bottom: 15px;
+}
+.title::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    width: 85px;
+    height: 3px;
+    background-color: var(--dark-blue);
+}
+.contact .list-wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .list-wrap .icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+.contact .list-wrap .text {
+    width: calc(100% - 50px);
+    color: var(--primary-color);
+    word-break: break-word;
+}
+.left .icon {
+    font-size: 20px;
+    color: var(--dark-pink);
+}
+.left .text {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--dark-pink);
+}
+.skills ul,.hobbies ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skills ul li .list-wrap,.hobbies ul li .list-wrap {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.skills .list-wrap {
+    background-color: var(--primary-color);
+}
+.hobbies .list-wrap {
+    border: 2px solid var(--primary-color);
+}
+.hobbies .list-wrap:hover {
+    background-color: var(--primary-color);
+}
+.skills .list-wrap .text,.hobbies .list-wrap .text {
+    margin-top: 5px;
+}
+.hobbies .list-wrap .icon,.hobbies .list-wrap .text {
+    color: var(--primary-color);
+}
+.hobbies .list-wrap:hover .icon,.hobbies .list-wrap:hover .text {
+    color: var(--dark-pink);
+}
+.right {
+    width: calc(100% - 250px);
+}
+.header {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    height: 240px;
+    padding: 15px 30px;
+}
+.header .name {
+    font-size: 52px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--dark-blue);
+}
+.header .role {
+    font-size: 20px;
+    font-weight: 300;
+}
+.header .about {
+    margin-top: 20px;
+    line-height: 26px;
+}
+.right-inner {
+    padding: 30px;
+    color: var(--secondary-color);
+}
+.right-inner .education {
+    margin-top: 30px;
+}
+.right-inner .list-wrap {
+    display: flex;
+    margin-bottom: 15px;
+}
+.right-inner .list-wrap .date {
+    width: 125px;
+    color: var(--dark-pink);
+}
+.right-inner .list-wrap .info {
+    width: calc(100% - 125px);
+    padding-left: 25px;
+    position: relative;
+}
+.right-inner .list-wrap .info::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--dark-pink);
+    border-radius: 50%;
+}
+.right-inner .list-wrap .info::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    width: 2px;
+    height: 90%;
+    background-color: var(--dark-pink);
+}
+.right-inner .list-wrap .info .info-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--dark-pink);
+}
+.right-inner .list-wrap .info .info-company {
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 3px;
+}
+.right-inner .list-wrap .info .info-description {
+    margin-top: 15px;
+}
