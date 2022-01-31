@@ -1,2 +1,2 @@
 # resume2
-My Personal Resume
+This is my Resume-Based Website
